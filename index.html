@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #loki{
+            position: relative;
+            left: 200px;
+            width: 40vw;
+           height: 120vh;
+           background-color: antiquewhite;
+          
+        }
+        .mukesh{
+            
+        }
+    [class]{
+        color: crimson;
+        margin-left: 90px;
+    }
+    [for="mukesh"]{
+          color: coral;
+    }
+   [for ~="date"]{
+    color: brown;
+   }
+    [for|="mail"]{
+        color: blue;
+    }
+    [for^="p"]{
+           background-color: aqua;
+           color: red;
+    }
+    [for $="me"]{
+        background-color: blueviolet;
+    }
+    [for*="il"]{
+        color: chartreuse;
+        background-color: chocolate;
+    }
+    [for$="ct"]{
+        background-color: darkcyan;
+        color: chartreuse;
+    }
+    [for="state"]{
+        background-color: red;
+        color: bisque;
+    }
+    [for="item"]{
+        background-color: darkslategray;
+        color: blueviolet;
+    }
+    [for="mukesh"]{
+        background-color: blanchedalmond;
+    }
+    [for^="ch"]{
+        background-color: cadetblue;
+        color: firebrick;
+    }
+    [for~=color]{
+             background-color: blueviolet;
+             color: aqua;
+    }
+    [for$="ge"]{
+        background-color: brown;
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <div id="loki">
+    <form>
+        <div class="mukesh">
+        <h1 class="">Form By using Attributes</h1>
+        <label for="mukesh">Name:</label>
+        <input type="name" id="mukesh" name="mukesh" placeholder="eg:ramu"/><br><br>
+        <label for="date ">Date of Birth:</label>
+        <input type="date" id="date" name="date" /><br><br>
+        <label for="mail">Mail:</label>
+        <input type="email" id="email" name="mail" placeholder="ramu@gmail.com"/><br><br>
+        <label for="phone">phone number:</label>
+        <input type="tel" id="phone" name="num"/><br><br>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time"/><br><br>
+        <label for="file">file:</label>
+        <input type="file" id="file" name="file"/><br><br>
+        <label for="district" >District</label>
+        <select name="mukesh" id="district">
+            <option value="chittor">chittor</option>
+            <option value="tirupati">Tirupati</option>
+            <option value="kadapa">kadapa</option>
+        </select><br><br>
+        <label for="state">State:</label>
+     <select id="state" name="kl">
+        <optgroup label="states">
+        <option value="ap">ap</option>
+        <option value="tn">Tn</option>
+        <option value="ts">Ts</option>
+    </optgroup>
+     </select><br><br>
+     <label for="mukesh">Backlogs:</label><br>
+     <label for="item">one:</label>
+     <input type="radio" id="item" name="md"/><br>
+     <label for="item">two:</label>
+     <input type="radio" id="item" name="md"/><br>
+     <label for="item">more than two:</label>
+     <input type="radio" id="item" name="md"/><br>
+     <label for="item">No Backlogs:</label>
+     <input type="radio" id="item" name="md"/><br>
+     <label >applied companies:</label><br>
+     <label for="chinna">tcs</label>
+     <input type="checkbox" id="chinna" name="king"/><br>
+     <label for="chinna">microsoft</label>
+     <input type="checkbox" id="chinna" name="item"/><br>
+     <label for="chinna">infosys</label>
+     <input type="checkbox" id="chinna" name="item2"/><br><br>
+     <label for="color">Color: </label>
+     <input type="color" id="color" name="item4"/><br><br>
+     <label for="range">Range:</label>
+     <input type="range" id="range" name="item2"/><br><br>
+     <input type="submit">
+    </form>
+</div>
+</div>
+</body>
+</html>
